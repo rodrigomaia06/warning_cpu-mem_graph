@@ -10,6 +10,3 @@ sleep 75
 NEXTDATE=`date +%F`
 sed -i "s,$PREVIOUSDATE,""$NEXTDATE"',' sendemailgraph.py
 rm graph_$PREVIOUSDATE.png
-
-
-
