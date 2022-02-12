@@ -5,7 +5,7 @@ password_base64 = "###password_base64###"
 password = base64.b64decode(password_base64).decode("utf-8")
 rec_email = "rodrigo.m.t.maia@gmail.com"
 
-subject = "WARNING CPU!"
+subject = "WARNING MEM!"
 body = "Mem_server >= ###ram_percentage_warning### %"
 msg = f"Subject: {subject}\n\n{body}"
 
