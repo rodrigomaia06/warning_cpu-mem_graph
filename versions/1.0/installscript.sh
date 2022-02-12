@@ -1,8 +1,7 @@
 #!/bin/bash
 #------Updating Packages and Installing Dependencies
 echo "Updating Packages ......"; sudo apt update &> /dev/null ;
-wget -q https://raw.githubusercontent.com/VladimirBromley0750/warning_cpu-mem_graph/main/versions/1.0/dependencies.sh; chmod +x dependencies.sh;  bash dependencies.sh &> /dev/null
-echo "Installing Dependencies ......";
+echo "Installing Dependencies ......"; wget -q https://raw.githubusercontent.com/VladimirBromley0750/warning_cpu-mem_graph/main/versions/1.0/dependencies.sh; chmod +x dependencies.sh;  bash dependencies.sh &> /dev/null
 #------Setting Needed Varibles and Creating the Script's Directory
 PCUSER=`whoami`
 SCRIPTDIR="/home/$PCUSER/.scriptmail-dependencies"
