@@ -6,7 +6,7 @@ password = base64.b64decode(password_base64).decode("utf-8")
 rec_email = "rodrigo.m.t.maia@gmail.com"
 
 subject = "WARNING!"
-body = "Mem_server >= ###percentage_warning### %"
+body = "Mem_server >= ###ram_percentage_warning### %"
 msg = f"Subject: {subject}\n\n{body}"
 
 server = smtplib.SMTP("smtp.gmail.com", 587)
