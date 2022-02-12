@@ -19,7 +19,7 @@ fi
 #---------SCRIPT - CHECK MEM
 CPU_USAGE=$[100-$(vmstat 1 2|tail -1|awk '{print $15}')]
 #-------SCRIPT - SEND EMAIL CPU
-if [[ "$CPU_USAGE" -ge $CPU_PERCENTAGE_WARNING && ! -f $TMP_FIRECTORY/nosendmailwarningcpu.txt ]]
+if [[ "$CPU_USAGE" -ge $CPU_PERCENTAGE_WARNING && ! -f $TMP_DIRECTORY/nosendmailwarningcpu.txt ]]
 then
         python3 $SCRIPT_DIRECTORY/sendmailwarningcpu.py
         touch $TMP_DIRECTORY/nosendmailwarningcpu.txt
