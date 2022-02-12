@@ -4,15 +4,15 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email import encoders
-sender_email = "ticericeira47@gmail.com"
-receiver_email = "rodrigo.m.t.maia@gmail.com"
-password_base64 = "eWIlbVZAJSVSJU1pNl5oNjRUZkJleE03bw=="
+sender_email = "###sender_email###"
+receiver_email = "###rec_email###"
+password_base64 = "###password_base64###"
 password = base64.b64decode(password_base64).decode("utf-8")
 message = MIMEMultipart()
 message["From"] = sender_email
 message['To'] = receiver_email
 message['Subject'] = 'StatsGraph 2022-02-12'
-file = "graph_2022-02-12.png"
+file = "graph_###date_installation###"
 attachment = open(file,'rb')
 obj = MIMEBase('application','octet-stream')
 obj.set_payload((attachment).read())
