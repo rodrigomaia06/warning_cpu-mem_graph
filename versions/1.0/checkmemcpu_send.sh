@@ -1,8 +1,8 @@
 #!/bin/bash
 #---------PERSONAL VARIABLES
-RAM_PERCENTAGE_WARNING="75"
-CPU_PERCENTAGE_WARNING="75"
-SCRIPT_DIRECTORY="/home/ubuntu/.scriptmail-dependencies"
+RAM_PERCENTAGE_WARNING="###ram_percentage_warning###"
+CPU_PERCENTAGE_WARNING="###cpu_percentage_warning###"
+SCRIPT_DIRECTORY="###script_directory###"
 TMP_DIRECTORY="/tmp"
 DATE=`date +%F`
 TIME=`date +"%H:%M"`
