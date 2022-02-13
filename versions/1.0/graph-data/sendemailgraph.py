@@ -12,7 +12,7 @@ message = MIMEMultipart()
 message["From"] = sender_email
 message['To'] = receiver_email
 message['Subject'] = 'StatsGraph ###date_installation###'
-file = "graph_###date_installation###"
+file = "graph_###date_installation###.png"
 attachment = open(file,'rb')
 obj = MIMEBase('application','octet-stream')
 obj.set_payload((attachment).read())
