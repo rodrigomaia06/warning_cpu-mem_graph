@@ -25,10 +25,12 @@ sed -i 's,###date_installation###,'"$DATE"',' $GRAPHDIR/sendemailgraph.py
 read -p "Warning Percentage(Memory): " -r
 sed -i 's,###ram_percentage_warning###,'"$REPLY"',' checkmemcpu_send.sh
 sed -i 's,###ram_percentage_warning###,'"$REPLY"',' sendmailwarningmem.py
+sed -i 's,###ram_percentage_warning###,'"$REPLY"',' $GRAPHDIR/graphmath.py
 
 read -p "Warning Percentage(CPU): " -r
 sed -i 's,###cpu_percentage_warning###,'"$REPLY"',' checkmemcpu_send.sh
 sed -i 's,###cpu_percentage_warning###,'"$REPLY"',' sendmailwarningcpu.py
+sed -i 's,###cpu_percentage_warning###,'"$REPLY"',' $GRAPHDIR/graphmath.py
 
 read -p "Sender's Gmail: " -r
 sed -i 's,###sender_email###,'"$REPLY"',' sendmailwarningmem.py
