@@ -20,7 +20,6 @@ wget -q https://raw.githubusercontent.com/rodrigomaia06/warning_cpu-mem_graph/ma
 echo "Downloading Needed Files ......"; wget -q https://raw.githubusercontent.com/rodrigomaia06/warning_cpu-mem_graph/main/versions/1.0/graph-data/sendemailgraph.py; chmod +x sendemailgraph.py; cd $SCRIPTDIR
 #-------Replacing Personal Varibles in Scripts
 sed -i 's,###script_directory###,'"$SCRIPTDIR"',' checkmemcpu_send.sh
-sed -i 's,###date_installation###,'"$DATE"',' $GRAPHDIR/sendemailgraph.py
 
 read -p "Warning Percentage(Memory): " -r
 sed -i 's,###ram_percentage_warning###,'"$REPLY"',' checkmemcpu_send.sh
@@ -47,6 +46,9 @@ read -p "Recipient Email: " -r
 sed -i 's,###rec_email###,'"$REPLY"',' sendmailwarningmem.py
 sed -i 's,###rec_email###,'"$REPLY"',' sendmailwarningcpu.py
 sed -i 's,###rec_email###,'"$REPLY"',' $GRAPHDIR/sendemailgraph.py
+
+cp $GRAPHDIR/sendemailgraph.py $GRAPHDIR/sendemailgraph_bkp.py
+sed -i 's,###date_installation###,'"$DATE"',' $GRAPHDIR/sendemailgraph.py
 #--------Adding Cronjob
 (crontab -l 2>/dev/null; echo "59 23 * * * /bin/bash $GRAPHDIR/create-send_graph.sh") | crontab -
 
