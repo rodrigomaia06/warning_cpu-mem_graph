@@ -46,10 +46,6 @@ read -p "Recipient Email: " -r
 sed -i 's,###rec_email###,'"$REPLY"',' sendmailwarningmem.py
 sed -i 's,###rec_email###,'"$REPLY"',' sendmailwarningcpu.py
 sed -i 's,###rec_email###,'"$REPLY"',' $GRAPHDIR/sendemailgraph.py
-
-cp $GRAPHDIR/sendemailgraph.py $GRAPHDIR/sendemailgraph_bkp.py
-sed -i 's,###date_installation###,'"###lastrunned###"',' $GRAPHDIR/sendemailgraph_bkp.py
-sed -i 's,###date_installation###,'"$DATE"',' $GRAPHDIR/sendemailgraph.py
 #--------Adding Cronjob
 (crontab -l 2>/dev/null; echo "59 23 * * * /bin/bash $GRAPHDIR/create-send_graph.sh") | crontab -
 
