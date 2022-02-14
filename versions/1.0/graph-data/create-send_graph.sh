@@ -8,5 +8,5 @@ mv plot.png graph_$PREVIOUSDATE.png
 python3 sendemailgraph.py
 cat /dev/null > graphdata.txt
 cp -rf sendemailgraph_bkp.py sendemailgraph.py
-sed -i "s,###date_installation###,""$NEXTDATE"',' sendemailgraph.py
+sed -i "s,###lastrunned###,""$NEXTDATE"',' sendemailgraph.py
 rm graph_$PREVIOUSDATE.png
