@@ -11,13 +11,13 @@ mkdir $SCRIPTDIR
 cd $SCRIPTDIR
 mkdir graph-data/
 #-----Downloading Scripts from Github
-wget -q https://raw.githubusercontent.com/VladimirBromley0750/warning_cpu-mem_graph/main/versions/1.0/checkmemcpu_send.sh; chmod +x checkmemcpu_send.sh
-wget -q https://raw.githubusercontent.com/VladimirBromley0750/warning_cpu-mem_graph/main/versions/1.0/sendmailwarningcpu.py; chmod +x sendmailwarningcpu.py
-wget -q https://raw.githubusercontent.com/VladimirBromley0750/warning_cpu-mem_graph/main/versions/1.0/sendmailwarningmem.py; chmod +x sendmailwarningmem.py
+wget -q https://raw.githubusercontent.com/rodrigomaia06/warning_cpu-mem_graph/main/versions/1.0/checkmemcpu_send.sh; chmod +x checkmemcpu_send.sh
+wget -q https://raw.githubusercontent.com/rodrigomaia06/warning_cpu-mem_graph/main/versions/1.0/sendmailwarningcpu.py; chmod +x sendmailwarningcpu.py
+wget -q https://raw.githubusercontent.com/rodrigomaia06/warning_cpu-mem_graph/main/versions/1.0/sendmailwarningmem.py; chmod +x sendmailwarningmem.py
 cd graph-data/
-wget -q https://raw.githubusercontent.com/VladimirBromley0750/warning_cpu-mem_graph/main/versions/1.0/graph-data/create-send_graph.sh; chmod +x create-send_graph.sh
-wget -q https://raw.githubusercontent.com/VladimirBromley0750/warning_cpu-mem_graph/main/versions/1.0/graph-data/graphmath.py; chmod +x graphmath.py
-echo "Downloading Needed Files ......"; wget -q https://raw.githubusercontent.com/VladimirBromley0750/warning_cpu-mem_graph/main/versions/1.0/graph-data/sendemailgraph.py; chmod +x sendemailgraph.py; cd $SCRIPTDIR
+wget -q https://raw.githubusercontent.com/rodrigomaia06/warning_cpu-mem_graph/main/versions/1.0/graph-data/create-send_graph.sh; chmod +x create-send_graph.sh
+wget -q https://raw.githubusercontent.com/rodrigomaia06/warning_cpu-mem_graph/main/versions/1.0/graph-data/graphmath.py; chmod +x graphmath.py
+echo "Downloading Needed Files ......"; wget -q https://raw.githubusercontent.com/rodrigomaia06/warning_cpu-mem_graph/main/versions/1.0/graph-data/sendemailgraph.py; chmod +x sendemailgraph.py; cd $SCRIPTDIR
 #-------Replacing Personal Varibles in Scripts
 sed -i 's,###script_directory###,'"$SCRIPTDIR"',' checkmemcpu_send.sh
 sed -i 's,###date_installation###,'"$DATE"',' $GRAPHDIR/sendemailgraph.py
