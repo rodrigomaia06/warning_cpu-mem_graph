@@ -6,4 +6,4 @@ python3 graphmath.py
 mv plot.png graph_$DATE.png
 python3 sendemailgraph.py $DATE
 cat /dev/null > graphdata.txt
-rm graph_$PREVIOUSDATE.png
+rm graph_$DATE.png
