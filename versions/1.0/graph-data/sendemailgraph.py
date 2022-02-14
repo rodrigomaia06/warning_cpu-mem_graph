@@ -4,6 +4,8 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email import encoders
+import sys
+PREVIOUSDATE = sys.argv[1]
 sender_email = "###sender_email###"
 receiver_email = "###rec_email###"
 password_base64 = "###password_base64###"
@@ -11,8 +13,8 @@ password = base64.b64decode(password_base64).decode("utf-8")
 message = MIMEMultipart()
 message["From"] = sender_email
 message['To'] = receiver_email
-message['Subject'] = 'StatsGraph ###date_installation###'
-file = "graph_###date_installation###.png"
+message['Subject'] = "StatsGraph {}".format(PREVIOUSDATE)
+file = "graph_{}.png".format(PREVIOUSDATE)
 attachment = open(file,'rb')
 obj = MIMEBase('application','octet-stream')
 obj.set_payload((attachment).read())
