@@ -1,6 +1,6 @@
 Warning_CPU-MEM_Graph
 ======
-Sends you an email when RAM or CPU usage on your PC is greater than a value set by you. It also sends you an email in a graph. Written in BASH and Python. 
+Sends you an email when RAM or CPU usage on your PC is greater than a value set by you. It also sends you an email with a graph. Written in BASH and Python. 
 
 ## Prerequisites:
 * Having "Less Secure Apps" activated on sender's account: https://myaccount.google.com/lesssecureapps
