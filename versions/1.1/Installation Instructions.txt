@@ -18,4 +18,4 @@ wget -q https://github.com/rodrigomaia06/warning_cpu-mem_graph/releases/download
 * It's recommended to have a disposable gmail to send the email as the password IS NOT ENCRYPTED
 
 ### Version 
-* Version 1.0
+* Version 1.1
