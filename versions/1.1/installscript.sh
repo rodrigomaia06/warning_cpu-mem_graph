@@ -23,7 +23,7 @@ rm -rf $TEMPDIR
 find $SCRIPTDIR \( -name "*.py" -o -name "*.sh" \) -exec chmod +x {} \;
 #-------Replacing Personal Varibles in Scripts
 cd $SCRIPTDIR
-sed -i 's,###script_directory###,'"$SCRIPTDIR"',' checkmemcpu_send.sh
+find $SCRIPTDIR -name "*.sh" -exec sed -i 's,###script_directory###,'"$SCRIPTDIR"',' {} \;
 
 read -p "Warning Percentage(Memory): " -r
 find $SCRIPTDIR \( -name "*.py" -o -name "*.sh" \) -exec sed -i 's,###ram_percentage_warning###,'"$REPLY"',' {} \;
