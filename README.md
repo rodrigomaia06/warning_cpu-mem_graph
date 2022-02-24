@@ -8,7 +8,7 @@ Sends you an email when RAM or CPU usage on your PC is greater than a value set 
 
 # Installation:
 ```
-wget -q https://github.com/rodrigomaia06/warning_cpu-mem_graph/releases/download/1.1/installscript.sh; bash installscript.sh; rm dependencies.sh
+wget -q https://github.com/rodrigomaia06/warning_cpu-mem_graph/releases/download/1.1/installscript.sh; bash installscript.sh
 ```
 # Removal:
 ```
