@@ -8,11 +8,11 @@ Sends you an email when RAM or CPU usage on your PC is greater than a value set 
 
 # Installation:
 ```
-wget -q https://github.com/rodrigomaia06/warning_cpu-mem_graph/releases/download/1.0/installscript.sh; chmod +x installscript.sh; bash installscript.sh; rm dependencies.sh
+wget -q https://github.com/rodrigomaia06/warning_cpu-mem_graph/releases/download/1.1/installscript.sh; bash installscript.sh; rm dependencies.sh
 ```
 # Removal:
 ```
-wget -q https://github.com/rodrigomaia06/warning_cpu-mem_graph/releases/download/1.0/uninstall.sh; bash uninstall.sh
+wget -q https://github.com/rodrigomaia06/warning_cpu-mem_graph/releases/download/1.1/uninstall.sh; bash uninstall.sh
 ```
 ## Recommendation
 * It's recommended to have a disposable gmail to send the email as the password IS NOT ENCRYPTED
