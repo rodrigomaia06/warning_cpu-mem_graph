@@ -3,7 +3,7 @@ import smtplib
 sender_email = "###sender_email###"
 password_base64 = "###password_base64###"
 password = base64.b64decode(password_base64).decode("utf-8")
-rec_email = "rodrigo.m.t.maia@gmail.com"
+rec_email = "###rec_email###"
 
 subject = "WARNING MEM!"
 body = "Mem_server >= ###ram_percentage_warning### %"
