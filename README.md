@@ -14,5 +14,8 @@ wget -q https://github.com/rodrigomaia06/warning_cpu-mem_graph/releases/download
 ```
 wget -q https://github.com/rodrigomaia06/warning_cpu-mem_graph/releases/download/1.0/uninstall.sh; bash uninstall.sh
 ```
+## Recommendation
+* It's recommended to have a disposable gmail to send the email as the password IS NOT ENCRYPTED
+
 ### Version 
 * Version 1.0
